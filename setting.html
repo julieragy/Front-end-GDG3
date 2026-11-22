@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Settings - CryptoVault</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+<div class="container">
+<input type="checkbox" id="theme-toggle">
+<aside class="sidebar">
+<h2 class="logo">CV <span>CryptoVault</span></h2>
+<p class="menu-title">MAIN MENU</p>
+<a href="index.html">Dashboard</a>
+<a href="#">Markets</a>
+<a href="#">Portfolio</a>
+<a href="#">Transactions</a>
+<a href="#">Analytics</a>
+<p class="menu-title">ACCOUNT</p>
+<a href="settings.html" class="active">Settings</a>
+<label for="theme-toggle" class="theme-label">Light Mode</label>
+<a href="login.html">Logout</a>
+</aside>
+<main class="main-content">
+<header class="header">
+<div>
+<h2>Settings</h2>
+<p>Manage your account preferences and security</p>
+</div>
+</header>
+<nav class="settings-nav">
+<a href="#profile">Profile</a>
+<a href="#security">Security</a>
+<a href="#notifications">Notifications</a>
+<a href="#preferences">Preferences</a>
+<a href="#connected">Connected</a>
+</nav>
+<section class="settings-card" id="profile">
+<div class="section-heading">
+<div>
+<h3>Personal Information</h3>
+<p>Update your personal account information</p>
+</div>
+<div class="profile-avatar">AM</div>
+</div>
+<h3>Alex Morgan</h3>
+<p class="muted">alex.morgan@email.com</p>
+<span class="pro-badge">Pro Trader</span>
+<form>
+<div class="form-grid">
+<div class="form-group">
+<label>First Name</label>
+<input type="text" value="Alex">
+</div>
+<div class="form-group">
+<label>Last Name</label>
+<input type="text" value="Morgan">
+</div>
+<div class="form-group">
+<label>Email Address</label>
+<input type="email" value="alex.morgan@email.com">
+</div>
+<div class="form-group">
+<label>Phone Number</label>
+<input type="tel" placeholder="Enter phone number">
+</div>
+<div class="form-group full-width">
+<label>Bio</label>
+<textarea placeholder="Tell us about yourself..."></textarea>
+</div>
+</div>
+<div class="button-group">
+<button type="submit" class="primary-btn">Save Changes</button>
+<button type="reset" class="secondary-btn">Cancel</button>
+</div>
+</form>
+</section>
+<section class="settings-card" id="security">
+<div class="section-heading">
+<div>
+<h3>Security Settings</h3>
+<p>Manage your account security and authentication methods</p>
+</div>
+</div>
+<div class="setting-row">
+<div>
+<h4>Password</h4>
+<p>Last changed 30 days ago</p>
+</div>
+<button class="secondary-btn">Change Password</button>
+</div>
+<div class="setting-row">
+<div>
+<h4>Two-Factor Authentication</h4>
+<p>Enabled via Authenticator App</p>
+</div>
+<button class="secondary-btn">Manage</button>
+</div>
+<div class="setting-row">
+<div>
+<h4>Biometric Login</h4>
+<p>Not configured</p>
+</div>
+<button class="secondary-btn">Enable</button>
+</div>
+<div class="setting-row">
+<div>
+<h4>Active Sessions</h4>
+<p>3 devices currently logged in</p>
+</div>
+<button class="secondary-btn">View All</button>
+</div>
+<div class="danger-zone">
+<h3>Danger Zone</h3>
+<p>Irreversible actions for your account</p>
+<div class="button-group">
+<button class="danger-btn">Delete Account</button>
+<button class="secondary-btn">Export All Data</button>
+</div>
+</div>
+</section>
+<section class="settings-card" id="notifications">
+<h3>Notification Preferences</h3>
+<p class="muted">Choose how you want to receive updates</p>
+<div class="setting-row">
+<div>
+<h4>Price Alerts</h4>
+<p>Get notified when prices hit your targets</p>
+</div>
+<label class="switch">
+<input type="checkbox" checked>
+<span></span>
+</label>
+</div>
+<div class="setting-row">
+<div>
+<h4>Transaction Updates</h4>
+<p>Receive alerts for deposits, withdrawals, and trades</p>
+</div>
+<label class="switch">
+<input type="checkbox" checked>
+<span></span>
+</label>
+</div>
+<div class="setting-row">
+<div>
+<h4>Security Alerts</h4>
+<p>Important security notifications and login alerts</p>
+</div>
+<label class="switch">
+<input type="checkbox" checked>
+<span></span>
+</label>
+</div>
+<div class="setting-row">
+<div>
+<h4>Marketing Emails</h4>
+<p>News, updates, and promotional offers</p>
+</div>
+<label class="switch">
+<input type="checkbox">
+<span></span>
+</label>
+</div>
+<div class="setting-row">
+<div>
+<h4>Weekly Report</h4>
+<p>Portfolio performance summary every week</p>
+</div>
+<label class="switch">
+<input type="checkbox" checked>
+<span></span>
+</label>
+</div>
+<div class="setting-row">
+<div>
+<h4>Push Notifications</h4>
+<p>Enable browser push notifications</p>
+</div>
+<label class="switch">
+<input type="checkbox">
+<span></span>
+</label>
+</div>
+</section>
+<section class="settings-card" id="preferences">
+<h3>Display Preferences</h3>
+<p class="muted">Customize how the app looks and behaves</p>
+<div class="form-grid">
+<div class="form-group">
+<label>Currency</label>
+<select>
+<option>USD - US Dollar</option>
+<option>EUR - Euro</option>
+<option>EGP - Egyptian Pound</option>
+</select>
+</div>
+<div class="form-group">
+<label>Language</label>
+<select>
+<option>English</option>
+<option>Arabic</option>
+</select>
+</div>
+<div class="form-group">
+<label>Timezone</label>
+<select>
+<option>UTC +02:00 Cairo</option>
+<option>UTC +00:00 London</option>
+<option>UTC -05:00 New York</option>
+</select>
+</div>
+<div class="form-group">
+<label>Date Format</label>
+<select>
+<option>MM/DD/YYYY</option>
+<option>DD/MM/YYYY</option>
+<option>YYYY-MM-DD</option>
+</select>
+</div>
+</div>
+<div class="setting-row">
+<div>
+<h4>Dark Mode</h4>
+<p>Use dark theme for the interface</p>
+</div>
+<label class="switch">
+<input type="checkbox" checked>
+<span></span>
+</label>
+</div>
+<div class="setting-row">
+<div>
+<h4>Compact View</h4>
+<p>Show more data with smaller elements</p>
+</div>
+<label class="switch">
+<input type="checkbox">
+<span></span>
+</label>
+</div>
+<div class="button-group">
+<button class="primary-btn">Save Preferences</button>
+<button type="reset" class="secondary-btn">Reset to Default</button>
+</div>
+</section>
+<section class="settings-card" id="connected">
+<h3>Connected Exchanges</h3>
+<p class="muted">Link your exchange accounts for seamless trading</p>
+<div class="exchange-row">
+<div class="exchange-icon">🦊</div>
+<div class="exchange-info">
+<h4>MetaMask</h4>
+<p>Connected • 0x742d...5f83</p>
+</div>
+<button class="danger-btn">Disconnect</button>
+</div>
+<div class="exchange-row">
+<div class="exchange-icon">C</div>
+<div class="exchange-info">
+<h4>Coinbase</h4>
+<p>Connected • alex.m@email.com</p>
+</div>
+<button class="danger-btn">Disconnect</button>
+</div>
+<div class="exchange-row">
+<div class="exchange-icon">B</div>
+<div class="exchange-info">
+<h4>Binance</h4>
+<p>Not connected</p>
+</div>
+<button class="secondary-btn">Connect</button>
+</div>
+<button class="primary-btn add-btn">+ Add Exchange</button>
+<div class="api-section">
+<h3>API Keys</h3>
+<p class="muted">Manage your API access for third-party integrations</p>
+<div class="form-group">
+<label>API Key</label>
+<input type="password" placeholder="Enter your API Key">
+</div>
+<div class="button-group">
+<button class="secondary-btn">Regenerate Key</button>
+<button class="secondary-btn">View Documentation</button>
+</div>
+</div>
+</section>
+<footer>
+Copyright © 2026 CryptoVault. All rights reserved.
+</footer>
+</main>
+</div>
+</body>
+</html>

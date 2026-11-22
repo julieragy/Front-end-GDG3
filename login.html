@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CryptoVault - Login</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="responsive.css">
+</head>
+<body class="login-page">
+<div class="login-container">
+<div class="login-logo">
+<h1>CryptoVault</h1>
+<p>Secure Your Digital Assets</p>
+</div>
+<div class="login-card">
+<input type="radio" name="account" id="login-tab" checked>
+<input type="radio" name="account" id="signup-tab">
+<div class="login-tabs">
+<label for="login-tab">Login</label>
+<label for="signup-tab">Sign Up</label>
+</div>
+<div class="login-form login-content">
+<h2>Welcome Back!</h2>
+<p>Login to access your account</p>
+<form action="index.html" method="get">
+<div class="form-group">
+<label for="login-email">Email Address</label>
+<input type="email" id="login-email" placeholder="Enter your email" required>
+</div>
+<div class="form-group">
+<label for="login-password">Password</label>
+<input type="password" id="login-password" placeholder="Enter your password" required>
+</div>
+<div class="login-options">
+<label><input type="checkbox"> Remember me</label>
+<a href="#">Forgot Password?</a>
+</div>
+<button type="submit" class="primary-btn">Login</button>
+</form>
+<p class="signup-text">Don't have an account? <label for="signup-tab">Sign Up</label></p>
+</div>
+<div class="login-form signup-content">
+<h2>Create Account</h2>
+<p>Join CryptoVault today</p>
+<form action="index.html" method="get">
+<div class="form-group">
+<label for="signup-name">Full Name</label>
+<input type="text" id="signup-name" placeholder="Enter your full name" required>
+</div>
+<div class="form-group">
+<label for="signup-email">Email Address</label>
+<input type="email" id="signup-email" placeholder="Enter your email" required>
+</div>
+<div class="form-group">
+<label for="signup-password">Password</label>
+<input type="password" id="signup-password" placeholder="Create a password" required>
+</div>
+<div class="form-group">
+<label for="confirm-password">Confirm Password</label>
+<input type="password" id="confirm-password" placeholder="Confirm your password" required>
+</div>
+<button type="submit" class="primary-btn">Create Account</button>
+</form>
+<p class="signup-text">Already have an account? <label for="login-tab">Login</label></p>
+</div>
+</div>
+<p class="login-footer">© 2026 CryptoVault. All rights reserved.</p>
+</div>
+</body>
+</html>

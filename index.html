@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CryptoVault Dashboard</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+<div class="container">
+<input type="checkbox" id="theme-toggle">
+<aside class="sidebar">
+<div class="logo">
+<h1>CV</h1>
+<h2>CryptoVault</h2>
+</div>
+<p class="menu-title">MAIN MENU</p>
+<a href="#head" class="active">Dashboard</a>
+<a href="">Portfolio</a>
+<a href="">Assets</a>
+<a href="">Transactions</a>
+<a href="">Watchlist</a>
+<p class="menu-title">ACCOUNT</p>
+<a href="setting.html">Settings</a>
+<label for="theme-toggle" class="theme-label">Light Mode</label>
+<a href="login.html">Logout</a>
+</aside>
+<main class="main-content">
+<header class="header" id="head">
+<div class="dash">
+<h1>Dashboard</h1>
+<p>Welcome back! Here's your portfolio overview.</p>
+</div>
+<div class="part">
+<input class="search" type="text" placeholder="🔍 Search...">
+<input class="notification" value="🔔" type="button">
+<div class="alex">
+<h1>AM</h1>
+<p><b>Alex Morgan</b><br>Pro Trader</p>
+</div>
+</div>
+</header>
+<div class="plateform">
+<div class="one">
+<div class="Portfolio">
+<div class="chart-head">
+<h1>Portfolio Overview</h1>
+<div class="time">
+<button class="first">1D</button>
+<button>1W</button>
+<button>1M</button>
+<button>1Y</button>
+</div>
+</div>
+<div class="chart-info">
+<h2>$84,254.32</h2>
+<p>+12.5% this month</p>
+</div>
+<div class="line-chart">
+<svg viewBox="0 0 600 180" preserveAspectRatio="none">
+<defs>
+<linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#bd9135" stop-opacity=".35"/>
+<stop offset="100%" stop-color="#bd9135" stop-opacity="0"/>
+</linearGradient>
+</defs>
+<path d="M0 135 L60 110 L120 125 L180 75 L240 95 L300 55 L360 85 L420 40 L480 65 L540 25 L600 40 L600 180 L0 180 Z" fill="url(#area)"/>
+<polyline points="0,135 60,110 120,125 180,75 240,95 300,55 360,85 420,40 480,65 540,25 600,40" fill="none" stroke="#bd9135" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div>
+<div class="days">
+<span>Mon</span>
+<span>Tue</span>
+<span>Wed</span>
+<span>Thu</span>
+<span>Fri</span>
+<span>Sat</span>
+<span>Sun</span>
+</div>
+</div>
+<div class="Asset">
+<div class="chart-head">
+<h1>Asset Performance</h1>
+<div class="time">
+<button class="first">Week</button>
+<button>Month</button>
+<button>Year</button>
+</div>
+</div>
+<div class="performance">
+<div class="bar-item">
+<div class="bar" style="height: 65%;"></div>
+<span>BTC</span>
+</div>
+<div class="bar-item">
+<div class="bar" style="height: 85%;"></div>
+<span>ETH</span>
+</div>
+<div class="bar-item">
+<div class="bar" style="height: 50%;"></div>
+<span>USDT</span>
+</div>
+<div class="bar-item">
+<div class="bar" style="height: 95%;"></div>
+<span>SOL</span>
+</div>
+<div class="bar-item">
+<div class="bar" style="height: 70%;"></div>
+<span>ADA</span>
+</div>
+<div class="bar-item">
+<div class="bar" style="height: 45%;"></div>
+<span>XRP</span>
+</div>
+</div>
+</div>
+</div>
+<div class="two">
+<div class="first crypto-card">
+<div class="card-header">
+<h1>BTC/USD</h1>
+<div class="salary">
+<b>$43,256.00</b>
+<span>+2.34%</span>
+</div>
+</div>
+<div class="candlestick-chart">
+<svg viewBox="0 0 300 100" width="100%" height="110">
+<polygon points="19,35 21,35 21,45 25,45 25,65 21,65 21,75 19,75 19,65 15,65 15,45 19,45" fill="#6c9a76"/>
+<polygon points="59,40 61,40 61,50 65,50 65,75 61,75 61,85 59,85 59,75 55,75 55,50 59,50" fill="#6c9a76"/>
+<polygon points="79,25 81,25 81,35 85,35 85,55 81,55 81,65 79,65 79,55 75,55 75,35 79,35" fill="#6c9a76"/>
+<polygon points="139,40 141,40 141,50 145,50 145,70 141,70 141,80 139,80 139,70 135,70 135,50 139,50" fill="#6c9a76"/>
+<polygon points="159,30 161,30 161,40 165,40 165,60 161,60 161,70 159,70 159,60 155,60 155,40 159,40" fill="#6c9a76"/>
+<polygon points="179,35 181,35 181,45 185,45 185,60 181,60 181,70 179,70 179,60 175,60 175,45 179,45" fill="#6c9a76"/>
+<polygon points="219,20 221,20 221,30 225,30 225,45 221,45 221,60 219,60 219,45 215,45 215,30 219,30" fill="#6c9a76"/>
+<polygon points="239,15 241,15 241,25 245,25 245,40 241,40 241,50 239,50 239,40 235,40 235,25 239,25" fill="#6c9a76"/>
+<polygon points="39,30 41,30 41,40 45,40 45,70 41,70 41,80 39,80 39,70 35,70 35,40 39,40" fill="#c46d6d"/>
+<polygon points="99,35 101,35 101,45 105,45 105,75 101,75 101,90 99,90 99,75 95,75 95,45 99,45" fill="#c46d6d"/>
+<polygon points="119,45 121,45 121,55 125,55 125,80 121,80 121,95 119,95 119,80 115,80 115,55 119,55" fill="#c46d6d"/>
+<polygon points="199,25 201,25 201,35 205,35 205,50 201,50 201,60 199,60 199,50 195,50 195,35 199,35" fill="#c46d6d"/>
+<polygon points="259,20 261,20 261,30 265,30 265,50 261,50 261,65 259,65 259,50 255,50 255,30 259,30" fill="#c46d6d"/>
+</svg>
+</div>
+</div>
+<div class="second crypto-card">
+<div class="card-header">
+<h1>ETH/USD</h1>
+<div class="salary">
+<b>$2,284.50</b>
+<span>+1.87%</span>
+</div>
+</div>
+<div class="candlestick-chart">
+<svg viewBox="0 0 300 100" width="100%" height="110">
+<polygon points="19,45 21,45 21,55 25,55 25,75 21,75 21,85 19,85 19,75 15,75 15,55 19,55" fill="#6c9a76"/>
+<polygon points="39,40 41,40 41,50 45,50 45,70 41,70 41,80 39,80 39,70 35,70 35,50 39,50" fill="#6c9a76"/>
+<polygon points="99,45 101,45 101,55 105,55 105,70 101,70 101,80 99,80 99,70 95,70 95,55 99,55" fill="#6c9a76"/>
+<polygon points="119,40 121,40 121,50 125,50 125,65 121,65 121,75 119,75 119,65 115,65 115,50 119,50" fill="#6c9a76"/>
+<polygon points="139,35 141,35 141,45 145,45 145,60 141,60 141,70 139,70 139,60 135,60 135,45 139,45" fill="#6c9a76"/>
+<polygon points="199,35 201,35 201,45 205,45 205,60 201,60 201,75 199,75 199,60 195,60 195,45 199,45" fill="#6c9a76"/>
+<polygon points="219,25 221,25 221,35 225,35 225,50 221,50 221,60 219,60 219,50 215,50 215,35 219,35" fill="#6c9a76"/>
+<polygon points="239,20 241,20 241,30 245,30 245,45 241,45 241,55 239,55 239,45 235,45 235,30 239,30" fill="#6c9a76"/>
+<polygon points="259,30 261,30 261,40 265,40 265,55 261,55 261,65 259,65 259,55 255,55 255,40 259,40" fill="#6c9a76"/>
+<polygon points="59,35 61,35 61,45 65,45 65,65 61,65 61,75 59,75 59,65 55,65 55,45 59,45" fill="#c46d6d"/>
+<polygon points="79,50 81,50 81,60 85,60 85,85 81,85 81,95 79,95 79,85 75,85 75,60 79,60" fill="#c46d6d"/>
+<polygon points="159,30 161,30 161,40 165,40 165,55 161,55 161,65 159,65 159,55 155,55 155,40 159,40" fill="#c46d6d"/>
+<polygon points="179,40 181,40 181,50 185,50 185,70 181,70 181,80 179,80 179,70 175,70 175,50 179,50" fill="#c46d6d"/>
+</svg>
+</div>
+</div>
+</div>
+<div class="three">
+<div class="first allocation">
+<h1>Asset Allocation</h1>
+<div class="allocation-content">
+<div class="donut"></div>
+<div class="legend">
+<p><span class="btc"></span> BTC <b>40%</b></p>
+<p><span class="eth"></span> ETH <b>25%</b></p>
+<p><span class="usdt"></span> USDT <b>20%</b></p>
+<p><span class="other"></span> Other <b>15%</b></p>
+</div>
+</div>
+</div>
+<div class="second health">
+<h1>Portfolio Health</h1>
+<div class="progress-circle health-circle">
+<div class="circle-text">
+<b>85%</b>
+<p>Excellent</p>
+</div>
+</div>
+</div>
+<div class="third risk">
+<h1>Risk Level</h1>
+<div class="progress-circle risk-circle">
+<div class="circle-text">
+<b>35%</b>
+<p>Moderate</p>
+</div>
+</div>
+</div>
+</div>
+<div class="four">
+<div class="first">
+<p>Total Balance</p>
+<h1>$84,254.32</h1>
+<p>+12.5% this month</p>
+</div>
+<div class="second">
+<p>Total Profit</p>
+<h1>$12,847.00</h1>
+<p>+8.2% vs last week</p>
+</div>
+<div class="third">
+<p>Pending Orders</p>
+<h1>7</h1>
+<p>3 buy, 4 sell</p>
+</div>
+<div class="fourth">
+<p>Active Assets</p>
+<h1>12</h1>
+<p>Across 4 wallets</p>
+</div>
+</div>
+<div class="five">
+<div class="Recent">
+<div class="recent-head">
+<h1>Recent Transactions</h1>
+<a href="#head">View All</a>
+</div>
+<div class="last">
+<div class="BTC">
+<h1>📈</h1>
+<p><b>Buy BTC</b><br>Today, 2:45 PM</p>
+<div class="price">+0.0234 BTC</div>
+</div>
+<hr>
+<div class="ETH">
+<h1>📉</h1>
+<p><b>Sell ETH</b><br>Today, 11:20 AM</p>
+<div class="price">-0.805 ETH</div>
+</div>
+<hr>
+<div class="USDT">
+<h1>🔁</h1>
+<p><b>Transfer USDT</b><br>Yesterday</p>
+<div class="price">500 USDT</div>
+</div>
+<hr>
+<div class="SOL">
+<h1>📈</h1>
+<p><b>Buy SOL</b><br>Dec 28, 2025</p>
+<div class="price">+15.5 SOL</div>
+</div>
+</div>
+</div>
+<div class="Movers">
+<div class="movers-head">
+<h1>Top Movers</h1>
+<p>
+<span>Gainers</span>
+<b>Losers</b>
+</p>
+</div>
+<div class="end">
+<ol>
+<li class="SOL">
+<h1>O</h1>
+<p><b>Solana</b><br>SOL</p>
+<div class="price">$98.42<br>+12.4%</div>
+</li>
+<hr>
+<li class="DOGE">
+<h1>D</h1>
+<p><b>Dogecoin</b><br>DOGE</p>
+<div class="price">$0.082<br>+8.5%</div>
+</li>
+<hr>
+<li class="BTC">
+<h1>B</h1>
+<p><b>Bitcoin</b><br>BTC</p>
+<div class="price">$43,256<br>+8.2%</div>
+</li>
+<hr>
+<li class="ETH">
+<h1>E</h1>
+<p><b>Ethereum</b><br>ETH</p>
+<div class="price">$2,284<br>+6.5%</div>
+</li>
+<hr>
+<li class="ADA">
+<h1>A</h1>
+<p><b>Cardano</b><br>ADA</p>
+<div class="price">$0.52<br>+5.1%</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="Watchlist">
+<div class="watch">
+<h1>Watchlist</h1>
+<input class="add" value="+ Add" type="button">
+</div>
+<div class="final">
+<div class="BTC">
+<h1>B</h1>
+<p><b>Bitcoin</b><br>BTC</p>
+<div class="price">$43,256<br>+2.34%</div>
+</div>
+<hr>
+<div class="ETH">
+<h1>E</h1>
+<p><b>Ethereum</b><br>ETH</p>
+<div class="price">$2,284<br>+1.87%</div>
+</div>
+<hr>
+<div class="XRP">
+<h1>X</h1>
+<p><b>XRP</b><br>XRP</p>
+<div class="price">$0.62<br>-1.24%</div>
+</div>
+<hr>
+<div class="DOGE">
+<h1>D</h1>
+<p><b>Dogecoin</b><br>DOGE</p>
+<div class="price">$0.082<br>+5.67%</div>
+</div>
+<hr>
+<div class="DOT">
+<h1>.</h1>
+<p><b>Polkadot</b><br>DOT</p>
+<div class="price">$7.45<br>+3.21%</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+<footer>
+Copyright &copy; 2026 CryptoVault. Designed by
+<a href="https://templatemo.com/">TemplateMo</a>
+</footer>
+</body>
+</html>

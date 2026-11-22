@@ -1,0 +1,358 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+}
+
+.main-content {
+    flex: 1;
+    width: auto;
+    min-width: 0;
+    max-width: 100%;
+}
+
+img,
+svg,
+canvas {
+    max-width: 100%;
+}
+
+input,
+select,
+textarea,
+button {
+    max-width: 100%;
+}
+
+@media (max-width: 1000px) {
+    .sidebar {
+        width: 190px;
+        min-width: 190px;
+        padding: 20px 12px;
+    }
+
+    .three {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .three .third {
+        grid-column: span 2;
+    }
+
+    .plateform {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .header {
+        padding: 15px;
+        margin: 15px;
+    }
+
+    .settings-card {
+        margin: 15px;
+    }
+
+    .settings-nav {
+        margin: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .sidebar {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        position: relative;
+        top: auto;
+        width: 100%;
+        min-width: 0;
+        min-height: auto;
+        padding: 15px;
+        border-right: none;
+        border-bottom: 1px solid #333;
+        gap: 5px;
+    }
+
+    .logo {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .menu-title {
+        width: 100%;
+        margin: 10px 5px 5px;
+    }
+
+    .sidebar a,
+    .theme-label {
+        display: block;
+        flex: 1 1 120px;
+        min-width: 0;
+        text-align: center;
+        margin: 0;
+        padding: 12px 8px;
+    }
+
+    .sidebar-bottom {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 5px;
+    }
+
+    .sidebar-bottom a {
+        flex: 1 1 120px;
+        min-width: 0;
+        text-align: center;
+    }
+
+    .main-content {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: auto;
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .part {
+        flex-wrap: wrap;
+        width: 100%;
+        min-width: 0;
+    }
+
+    .search {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .plateform {
+        width: auto;
+        max-width: 100%;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .one,
+    .two,
+    .three,
+    .four,
+    .five {
+        grid-template-columns: minmax(0, 1fr);
+        min-width: 0;
+    }
+
+    .three .third,
+    .Watchlist {
+        grid-column: span 1;
+    }
+
+    .Portfolio,
+    .Asset {
+        min-width: 0;
+        max-width: 100%;
+    }
+
+    .two .first,
+    .two .second,
+    .three .first,
+    .three .second,
+    .three .third,
+    .four .first,
+    .four .second,
+    .four .third,
+    .four .fourth {
+        margin: 0;
+        min-width: 0;
+        max-width: 100%;
+    }
+
+    .chart-head {
+        flex-wrap: wrap;
+    }
+
+    .settings-nav {
+        margin: 10px;
+        max-width: calc(100% - 20px);
+    }
+
+    .settings-card {
+        margin: 10px;
+        padding: 20px;
+        min-width: 0;
+        max-width: calc(100% - 20px);
+    }
+
+    .form-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .full-width {
+        grid-column: auto;
+    }
+
+    .setting-row,
+    .exchange-row {
+        flex-wrap: wrap;
+    }
+
+    .exchange-info {
+        min-width: 0;
+    }
+
+    .login-page {
+        padding: 20px;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        padding: 12px;
+    }
+
+    .sidebar a,
+    .theme-label,
+    .sidebar-bottom a {
+        flex: 1 1 100px;
+        min-width: 0;
+        font-size: 12px;
+        padding: 11px 5px;
+    }
+
+    .dash h1 {
+        font-size: 21px;
+    }
+
+    .header {
+        margin: 8px;
+        padding: 12px;
+    }
+
+    .plateform {
+        padding: 5px;
+        margin: 8px;
+    }
+
+    .Portfolio,
+    .Asset,
+    .two .first,
+    .two .second,
+    .three .first,
+    .three .second,
+    .three .third {
+        padding: 15px;
+        margin: 0;
+        min-width: 0;
+        max-width: 100%;
+    }
+
+    .two .card-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .Recent,
+    .Movers,
+    .Watchlist {
+        padding: 15px;
+        margin: 0;
+        min-width: 0;
+        max-width: 100%;
+    }
+
+    .movers-head,
+    .time,
+    .setting-row,
+    .exchange-row {
+        flex-wrap: wrap;
+    }
+
+    .time button {
+        padding: 6px 8px;
+    }
+
+    .allocation-content {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .legend {
+        max-width: 150px;
+    }
+
+    .performance {
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+
+    .line-chart {
+        height: 120px;
+        max-width: 100%;
+    }
+
+    .settings-card {
+        padding: 15px;
+        margin: 8px;
+        max-width: calc(100% - 16px);
+    }
+
+    .settings-nav {
+        padding: 10px;
+        margin: 8px;
+        gap: 5px;
+        max-width: calc(100% - 16px);
+    }
+
+    .settings-nav a {
+        padding: 9px;
+        font-size: 12px;
+    }
+
+    .section-heading {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .exchange-info {
+        min-width: 0;
+    }
+
+    .login-card {
+        padding: 25px 18px;
+        max-width: 100%;
+    }
+
+    .login-options {
+        flex-wrap: wrap;
+    }
+}
